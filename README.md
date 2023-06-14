@@ -1,1 +1,2 @@
-# Linked-List
+# LinkedList
+A really basic linked list.
