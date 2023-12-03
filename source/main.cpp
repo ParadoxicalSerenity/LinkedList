@@ -3,14 +3,16 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     const int index_offset = 1; // for loops that start at 0
     LinkedList list = LinkedList();
 
     cout << "Creating a list..." << std::endl;
     int totalItems = 7;
 
-    for (auto i = 0; i <= totalItems; i++) list.append("");
+    for (auto i = 0; i <= totalItems; i++)
+        list.append("");
 
     cout << "List current size: " << list.getSize() << endl;
 
@@ -28,23 +30,22 @@ int main() {
 
     cout << "Inserting after position 2." << std::endl;
 
-    list.insertAfter(2,"");
+    list.insertAfter(2, "");
 
     list.dumpState();
 
     cout << "Inserting before position 2." << std::endl;
 
-    list.insertBefore(2,"");
+    list.insertBefore(2, "");
 
     list.dumpState();
 
-
-
     cout << "Freeing list using remove()" << std::endl;
 
-    for (auto i = 0; i <= totalItems; i++) list.remove();
+    for (auto i = 0; i <= totalItems; i++)
+        list.remove();
 
     cout << "List current size: " << list.getSize() << endl;
-    cout << "Item currently in memory: " <<list[0];
+    cout << "Item currently in memory: " << list[0];
     return 0;
 }
