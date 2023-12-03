@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-    const int index_offset = 1; // for loops that start at 0
     LinkedList list = LinkedList();
 
     cout << "Creating a list..." << std::endl;
